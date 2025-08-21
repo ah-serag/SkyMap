@@ -17,7 +17,6 @@ import { Button } from "../ui/button";
 const links = [
   { href: "/Dashboard", label: "Dashboard", icon: faChartSimple },
   { href: "/Doc", label: "Doc", icon: faBook },
-  { href: "/settings", label: "Settings", icon: faGear },
 ];
 
 const NavbarMain: React.FC = () => {
@@ -26,8 +25,7 @@ const NavbarMain: React.FC = () => {
   const isActive = (path: string) =>  pathname === path ? "border-b-accent border-b-1" : "";
   const toggleMobile = () => setIsMobileOpen(!isMobileOpen);
 
-// const hiddenPaths = ['/login', '/signUp'];
-// if (hiddenPaths.includes(pathname)) return null;
+
 
   return (
     <nav className="w-full fixed h-[59px] z-50 border-b-1 border-accent top-0 bg-card text-foreground">

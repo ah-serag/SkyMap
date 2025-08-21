@@ -11,9 +11,7 @@ import {
   faCircleInfo,
   faGear,
 } from "@fortawesome/free-solid-svg-icons";
-import Image from "next/image";
 import { ModeToggle } from "../ModeToggle";
-import { useTheme } from "next-themes";
 import { Button } from "../ui/button";
 
 const links = [
@@ -27,35 +25,16 @@ const NavbarMain: React.FC = () => {
   const pathname = usePathname();
   const isActive = (path: string) =>  pathname === path ? "border-b-accent border-b-1" : "";
   const toggleMobile = () => setIsMobileOpen(!isMobileOpen);
-  const { resolvedTheme } = useTheme();
 
-const hiddenPaths = ['/login', '/signUp'];
-
-if (hiddenPaths.includes(pathname)) return null;
+// const hiddenPaths = ['/login', '/signUp'];
+// if (hiddenPaths.includes(pathname)) return null;
 
   return (
     <nav className="w-full fixed h-[59px] z-50 border-b-1 border-accent top-0 bg-card text-foreground">
       <div className="py-1 px-2 mx-auto bg-card flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center">
-          {resolvedTheme === "dark" ? (
-            <Image
-              src="/photo/AgroMateLogDark.svg"
-              alt="Logo (Dark)"
-              width={170}
-              height={50}
-              priority
-            />
-          ) : (
-            <Image
-              src="/photo/AgroMateLog.svg"
-              alt="Logo (Light)"
-              width={170}
-              height={50}
-              priority
-
-            />
-          )}
+           <h1 className="w-32 font-bold">AgroMate</h1>
         </div>
 
         {/* Desktop Links + Mode */}
@@ -111,11 +90,7 @@ if (hiddenPaths.includes(pathname)) return null;
                 </Link>
               </li>
             ))}
-            <li className="flex justify-end w-full">
-              <Link href="/">
-                <Button variant="outline">log out</Button>
-              </Link>
-            </li>
+            
           </ul>
         </div>
       )}

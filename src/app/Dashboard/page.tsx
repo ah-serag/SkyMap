@@ -5,7 +5,7 @@ import WindRoseChart from "../features/wheather/Wind";
 import CardWeather from "../features/wheather/CardWeather";
 
 
-const Page = () => {
+const DashbordPage = () => {
 
 
 
@@ -37,4 +37,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default DashbordPage;

@@ -4,10 +4,7 @@ import { AppDispatch } from "@/app/store/store";
 import { RootState } from "@/app/store/store";
 import { fetchForecast } from "./weatherDaylySlice";
 import { useEffect } from "react";
-import { faChartSimple } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTheme } from "next-themes";
-import { TrendingUp } from "lucide-react";
 import {
   Area,
   AreaChart,

@@ -3,6 +3,7 @@ import ChartWeather from "../../features/weatherdaily/ChartWeather";
 import ChartHumility from "../../features/weatherdaily/charthumility";
 import WindRoseChart from "../../features/wheather/Wind";
 import CardWeather from "../../features/wheather/CardWeather";
+import HeadDash from "@/app/components/HeadDash";
 
 const Map = dynamic(()=> import("../../features/mapLocation/Map"))
 
@@ -11,7 +12,8 @@ const DashbordPage = () => {
 
 
   return (
-<div className="pt-[98px] px-2 pb-2 grid grid-cols-12 sm:h-[100vh] h-[1300px] grid-rows-[repeat(5,minmax(250px,1fr))] sm:grid-rows-12 gap-2">
+
+<div className="pt-[58px] md:pt-[72px] px-2 pb-2 grid grid-cols-12 sm:h-[100vh] h-[1300px] grid-rows-[repeat(5,minmax(250px,1fr))] sm:grid-rows-12 gap-2">
 
   <div className="col-span-12 order-1 sm:order-none s  sm:col-span-6 md:col-span-3 sm:row-span-4 md:row-span-5 cardSahdow">
    <CardWeather />
@@ -34,7 +36,6 @@ const DashbordPage = () => {
   </div>
 
 </div>
-
   );
 };
 

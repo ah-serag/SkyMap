@@ -22,13 +22,13 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/app/components/butto/card";
+} from "@/components/butto/card";
 import {
   ChartConfig,
   ChartContainer,
   ChartTooltip,
   ChartTooltipContent,
-} from "@/app/components/butto/chart";
+} from "@/components/butto/chart";
 
 import { SkeletonCard } from "@/app/components/ui/Skelton";
 

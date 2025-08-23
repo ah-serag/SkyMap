@@ -10,13 +10,13 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/app/components/butto/card";
+} from "@/components/butto/card";
 import {
   ChartConfig,
   ChartContainer,
   ChartTooltip,
   ChartTooltipContent,
-} from "@/app/components/butto/chart";
+} from "@/components/butto/chart";
 
 const chartConfig = {
   visitors: {

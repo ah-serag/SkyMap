@@ -4,12 +4,13 @@
 
  const HeadDash = () => {
   return (
- <div className='py-1 fixed mt-[59px] z-30  w-full border-b-accent border-b-1 px-3 bg-card  '>
-  <div className='flex font-semibold w-fit  px-1 items-center'>
-     <h1 className='font-medium'>Dashboard</h1>
-  </div>
-      
- </div>
+      <header className="w-full bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-yellow-500/10 backdrop-blur-sm border-b border-accent py-3 px-4 shadow-sm">
+      <div className="max-w-7xl mx-auto flex flex-col items-start md:flex-row md:items-center md:justify-between">
+        <h1 className="text-xl md:text-2xl font-bold text-foreground">
+          Dashboard
+        </h1>
+      </div>
+    </header>
   )
 }
 

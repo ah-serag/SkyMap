@@ -1,14 +1,12 @@
-// "use client";
 
 import React from "react";
-import Link from "../Link/Link";
-// import { usePathname } from "next/navigation";
 import { ModeToggle } from "../ModeToggle";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "../ui/button";
 import { Menu } from "lucide-react";
 import { faChartSimple, faBook } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 
 const links = [
   { href: "/Doc", label: "Doc", icon: faBook },
@@ -18,11 +16,6 @@ const links = [
 
 const NavbarMain: React.FC = () => {
 
-//   const pathname = usePathname();
-//  const isActive = (path: string) =>
-//   pathname === path
-//     ? "bg-gradient-to-r from-blue-500/20 to-purple-500/20 text-blue-500 font-semibold rounded-lg shadow-sm"
-//     : "hover:bg-accent hover:text-foreground/90 rounded-lg transition-all duration-300";
 
   return (
     <nav className="w-full p-1 fixed z-50 border-b border-accent top-0 bg-card text-foreground">
@@ -42,6 +35,7 @@ const NavbarMain: React.FC = () => {
             {links.map((link) => (
               <li key={link.href} className="h-[50px] flex items-center">
                 <Link
+                  prefetch={true}
                   href={link.href}
                   className={`hover:bg-accent p-2 rounded-[10px] transition `}
                 >
@@ -72,6 +66,8 @@ const NavbarMain: React.FC = () => {
                   <Link
                     key={link.href}
                     href={link.href}
+                    prefetch={true}
+
                     className={`flex items-center gap-2 hover:bg-accent p-2 rounded-lg transition-all duration-300`}
                   >
                     <FontAwesomeIcon icon={link.icon} className="text-sm" />

@@ -11,7 +11,8 @@ const CardWeather = () => {
   const location = useSelector((state: RootState) => state.location)
   const stateWeather = useSelector((state: RootState) => state.Wheather)
   const dispatch = useDispatch<AppDispatch>()
-
+ 
+  
   useEffect(() => {
     if (location.lat && location.lng) {
       dispatch(fetchWeather({ lat: location.lat, lng: location.lng }))

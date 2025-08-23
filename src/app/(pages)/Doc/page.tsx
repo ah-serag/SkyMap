@@ -1,6 +1,6 @@
 
-import React from "react";
 import Link from "next/link";
+import React from "react";
 
 
 
@@ -23,7 +23,9 @@ const DocPage: React.FC = () => {
 
           {/* Go to Dashboard Button */}
         <div className=" flex justify-center mt-3">
-          <Link href="/Dashboard" className="px-6 py-3 bg-gradient-to-r from-fuchsia-400  to-emerald-300 font-semibold rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+          <Link
+           prefetch={true}
+           href="/Dashboard" className="px-6 py-3 bg-gradient-to-r from-fuchsia-400  to-emerald-300 font-semibold rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
             Go to Dashboard
           </Link>
         </div>

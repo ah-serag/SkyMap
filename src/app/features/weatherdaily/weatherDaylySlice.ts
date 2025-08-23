@@ -50,7 +50,7 @@ export const fetchForecast = createAsyncThunk<
       const response = await axios(`/api/weatherDaily?lat=${lat}&lng=${lng}`);
       return response.data;
     } catch (error) {
-      return thunkAPI.rejectWithValue('فشل في جلب بيانات الطقس');
+      return thunkAPI.rejectWithValue('');
     }
   }
 );

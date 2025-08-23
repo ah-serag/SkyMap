@@ -1,5 +1,4 @@
 import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
-import axios from 'axios';
 
 interface WeatherData {
   weather: { id: number; main: string; description: string; icon: string }[];

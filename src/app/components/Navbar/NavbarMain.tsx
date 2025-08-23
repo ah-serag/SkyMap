@@ -1,8 +1,8 @@
-"use client";
+// "use client";
 
 import React from "react";
 import Link from "../Link/Link";
-import { usePathname } from "next/navigation";
+// import { usePathname } from "next/navigation";
 import { ModeToggle } from "../ModeToggle";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "../ui/button";
@@ -17,11 +17,12 @@ const links = [
 ];
 
 const NavbarMain: React.FC = () => {
-  const pathname = usePathname();
- const isActive = (path: string) =>
-  pathname === path
-    ? "bg-gradient-to-r from-blue-500/20 to-purple-500/20 text-blue-500 font-semibold rounded-lg shadow-sm"
-    : "hover:bg-accent hover:text-foreground/90 rounded-lg transition-all duration-300";
+
+//   const pathname = usePathname();
+//  const isActive = (path: string) =>
+//   pathname === path
+//     ? "bg-gradient-to-r from-blue-500/20 to-purple-500/20 text-blue-500 font-semibold rounded-lg shadow-sm"
+//     : "hover:bg-accent hover:text-foreground/90 rounded-lg transition-all duration-300";
 
   return (
     <nav className="w-full p-1 fixed z-50 border-b border-accent top-0 bg-card text-foreground">
@@ -42,9 +43,7 @@ const NavbarMain: React.FC = () => {
               <li key={link.href} className="h-[50px] flex items-center">
                 <Link
                   href={link.href}
-                  className={`hover:bg-accent p-2 rounded-[10px] transition ${isActive(
-                    link.href
-                  )}`}
+                  className={`hover:bg-accent p-2 rounded-[10px] transition `}
                 >
                   {link.label}
                 </Link>
@@ -73,9 +72,7 @@ const NavbarMain: React.FC = () => {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className={`flex items-center gap-2 hover:bg-accent p-2 rounded-lg transition-all duration-300 ${isActive(
-                      link.href
-                    )}`}
+                    className={`flex items-center gap-2 hover:bg-accent p-2 rounded-lg transition-all duration-300`}
                   >
                     <FontAwesomeIcon icon={link.icon} className="text-sm" />
                     {link.label}

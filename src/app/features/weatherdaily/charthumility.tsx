@@ -2,7 +2,6 @@
 
 import { useSelector } from "react-redux";
 import { RootState } from "@/app/store/store";
-import * as React from "react";
 import { Pie, PieChart, ResponsiveContainer } from "recharts";
 import {
   Card,
@@ -17,6 +16,7 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/butto/chart";
+import Image from "next/image";
 
 const chartConfig = {
   visitors: {
@@ -108,7 +108,7 @@ const ChartHumility: React.FC = () => {
           </ChartContainer>
         ) : (
           <div className="h-full w-full flex flex-col items-center justify-center text-muted-foreground text-sm">
-            <img src="/photo/Rain.svg" className="w-20" alt="No rain" />
+            <Image src="/photo/Rain.svg" width={40} height={20} className="w-20" alt="No rain" />
             <p>No rain expected in the next 5 days.</p>
           </div>
         )}

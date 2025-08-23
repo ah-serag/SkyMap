@@ -1,4 +1,3 @@
-// hooks/useMounted.ts
 
 import { useEffect, useState } from 'react';
 

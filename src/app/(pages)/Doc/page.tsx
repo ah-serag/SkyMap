@@ -2,6 +2,9 @@
 import React from "react";
 import Link from "next/link";
 
+
+
+
 const DocPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">

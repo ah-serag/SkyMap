@@ -8,11 +8,8 @@ import {
   faBars,
   faChartSimple,
   faBook,
-  faCircleInfo,
-  faGear,
 } from "@fortawesome/free-solid-svg-icons";
 import { ModeToggle } from "../ModeToggle";
-import { Button } from "../ui/button";
 
 const links = [
   { href: "/Dashboard", label: "Dashboard", icon: faChartSimple },
@@ -50,11 +47,6 @@ const NavbarMain: React.FC = () => {
                 </Link>
               </li>
             ))}
-            <li>
-              <Link href="/">
-                <Button variant="secondary">log out</Button>
-              </Link>
-            </li>
           </ul>
 
           <ModeToggle />

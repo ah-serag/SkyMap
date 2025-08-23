@@ -1,10 +1,10 @@
 import dynamic from "next/dynamic";
-import ChartWeather from "../features/weatherdaily/ChartWeather";
-import ChartHumility from "../features/weatherdaily/charthumility";
-import WindRoseChart from "../features/wheather/Wind";
-import CardWeather from "../features/wheather/CardWeather";
+import ChartWeather from "../../../features/weatherdaily/ChartWeather";
+import ChartHumility from "../../../features/weatherdaily/charthumility";
+import WindRoseChart from "../../../features/wheather/Wind";
+import CardWeather from "../../../features/wheather/CardWeather";
 
-const Map = dynamic(()=> import("../features/mapLocation/Map"))
+const Map = dynamic(()=> import("../../../features/mapLocation/Map"))
 
 const DashbordPage = () => {
 

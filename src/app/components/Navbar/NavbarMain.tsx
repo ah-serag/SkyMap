@@ -70,7 +70,7 @@ const NavbarMain: React.FC = () => {
 
                     className={`flex items-center gap-2 hover:bg-accent p-2 rounded-lg transition-all duration-300`}
                   >
-                    <FontAwesomeIcon icon={link.icon} className="text-sm" />
+                    <FontAwesomeIcon icon={link.icon} className="w-[15px]" />
                     {link.label}
                   </Link>
                 ))}

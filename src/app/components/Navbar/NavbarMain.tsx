@@ -11,8 +11,9 @@ import { faChartSimple, faBook } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const links = [
-  { href: "/Dashboard", label: "Dashboard", icon: faChartSimple },
   { href: "/Doc", label: "Doc", icon: faBook },
+  { href: "/Dashboard", label: "Dashboard", icon: faChartSimple },
+  
 ];
 
 const NavbarMain: React.FC = () => {
@@ -24,7 +25,7 @@ const NavbarMain: React.FC = () => {
 
   return (
     <nav className="w-full p-1 fixed z-50 border-b border-accent top-0 bg-card text-foreground">
-      <div className="py-1 px-2 mx-auto bg-card flex justify-between items-center">
+      <div className="py-1 px-5 mx-auto bg-card flex justify-between items-center">
 
         {/* Logo */}
         <div className="flex items-center">
@@ -36,7 +37,7 @@ const NavbarMain: React.FC = () => {
         {/* Desktop Links + Mode */}
         <div className="flex gap-2 items-center">
 
-          <ul className="hidden md:flex space-x-4 h-[50px] self-center items-center">
+          <ul className="hidden  pr-[30px] md:flex space-x-4 h-[50px] self-center items-center">
             {links.map((link) => (
               <li key={link.href} className="h-[50px] flex items-center">
                 <Link

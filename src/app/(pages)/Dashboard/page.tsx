@@ -3,7 +3,6 @@ import ChartWeather from "../../features/weatherdaily/ChartWeather";
 import ChartHumility from "../../features/weatherdaily/charthumility";
 import WindRoseChart from "../../features/wheather/Wind";
 import CardWeather from "../../features/wheather/CardWeather";
-import HeadDash from "@/app/components/HeadDash";
 
 const Map = dynamic(()=> import("../../features/mapLocation/Map"))
 

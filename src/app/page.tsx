@@ -1,10 +1,15 @@
 import React from 'react'
+import { redirect } from 'next/navigation'
 
 const page = () => {
   return (
-    <div className='flex h-screen items-center justify-center'>
-     
-    </div>
+    <>
+     {
+     redirect("/Doc")
+
+     }
+
+    </>
   )
 }
 

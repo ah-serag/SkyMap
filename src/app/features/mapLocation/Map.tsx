@@ -23,7 +23,6 @@ const Map: React.FC = () => {
 // icon farm Location 
 var greenIcon = L.icon({
     iconUrl: '/photo/AgroMap.svg',
-    shadowUrl: '/Photo/AgroShadowMap.svg',
 
     iconSize:     [50, 50], // size of the icon
     shadowSize:   [50, 50], // size of the shadow
